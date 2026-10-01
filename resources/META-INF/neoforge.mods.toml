@@ -1,0 +1,11 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="MIT"
+issueTrackerURL="https://github.com/shlingusjambo-glitch/SiliconXR-Mod/issues"
+
+[[mods]]
+modId="siliconxr"
+version="1.0.0"
+displayName="SiliconXR"
+description="Vivecraft on Apple Silicon Macs: VR through MacVR to your Quest, no SteamVR needed."
+displayTest="IGNORE_ALL_VERSION"

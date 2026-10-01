@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "siliconxr",
+  "version": "1.0.0",
+  "name": "SiliconXR",
+  "description": "Vivecraft on Apple Silicon Macs: VR through MacVR to your Quest, no SteamVR needed.",
+  "license": "MIT",
+  "environment": "client",
+  "contact": {"sources": "https://github.com/shlingusjambo-glitch/SiliconXR-Mod"},
+  "entrypoints": {"preLaunch": ["siliconxr.mod.SiliconXRFabric"]}
+}
