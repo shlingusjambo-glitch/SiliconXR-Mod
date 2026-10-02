@@ -21,4 +21,12 @@ SILICONXR_BUILD=/path/to/SiliconXR/build ./build.sh   # -> build/siliconxr.jar (
 The default `SILICONXR_BUILD` is `../SiliconXR/build`. Loader APIs are stubbed at compile time (`stubs/`), so no
 Minecraft or loader dependencies are needed.
 
-`test/run.sh` loads the jar with LWJGL already initialized, as in game, and runs SiliconXR's OpenVR test through it.
+`test/run.sh` loads the jar with LWJGL already initialized, as it is in game, and runs SiliconXR's OpenVR test through it. It uses a temporary MacVR shared memory, so MacVR does not need to be running.
+
+## What you get in game
+
+- Frames go to MacVR without stalling Minecraft's render thread on the GPU.
+- Vivecraft skips drawing the lens corners you can't see, using the hidden area mesh.
+- Haptics reach both hands, including when both buzz at once.
+- Vivecraft re-reads the controller aim when you switch between controllers and hand tracking.
+- Skeletal hand data is available to mods that read OpenVR skeletal input. Vivecraft 1.3.x does not read it.
